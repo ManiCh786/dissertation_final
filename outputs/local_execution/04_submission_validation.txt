@@ -1,0 +1,6 @@
+SUBMISSION VALIDATION PASSED
+ - 1,920-row functional sanity test is traceable (1,916 clean, 4 rejected)
+ - Gold analytics and 15 local analytical figures are present
+ - controlled 100K/500K/1M benchmark workloads are present with manifest
+ - local performance results are explicitly labelled NOT_AZURE
+ - Azure final gate was not requested; run with --require-azure before final dissertation submission

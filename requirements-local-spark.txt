@@ -1,0 +1,2 @@
+# Optional local fallback. Java 17 is also required for PySpark on Windows.
+pyspark>=3.5,<4.0

@@ -1,0 +1,32 @@
+{
+  "name": "PL_ECOMMERCE_BEHAVIOUR_PIPELINE",
+  "properties": {
+    "description": "Parameterised ADF orchestration for 100K/500K/1M e-commerce scalability runs.",
+    "parameters": {
+      "sampleSize": {"type": "string", "defaultValue": "100000"},
+      "inputFile": {"type": "string", "defaultValue": "ecommerce_100000.csv"},
+      "storageAccount": {"type": "string"},
+      "fileSystem": {"type": "string", "defaultValue": "ecommerce"}
+    },
+    "activities": [
+      {
+        "name": "Databricks_ECommerce_ETL",
+        "type": "DatabricksNotebook",
+        "dependsOn": [],
+        "policy": {"timeout": "0.12:00:00", "retry": 1, "retryIntervalInSeconds": 30, "secureOutput": false, "secureInput": false},
+        "userProperties": [],
+        "typeProperties": {
+          "notebookPath": "/Shared/03_etl_pyspark_notebook",
+          "baseParameters": {
+            "sampleSize": {"value": "@pipeline().parameters.sampleSize", "type": "Expression"},
+            "inputFile": {"value": "@pipeline().parameters.inputFile", "type": "Expression"},
+            "storageAccount": {"value": "@pipeline().parameters.storageAccount", "type": "Expression"},
+            "fileSystem": {"value": "@pipeline().parameters.fileSystem", "type": "Expression"}
+          }
+        },
+        "linkedServiceName": {"referenceName": "LS_AZURE_DATABRICKS", "type": "LinkedServiceReference"}
+      }
+    ],
+    "annotations": ["dissertation", "scalability", "ecommerce"]
+  }
+}

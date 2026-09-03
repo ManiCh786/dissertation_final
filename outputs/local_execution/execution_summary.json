@@ -1,0 +1,23 @@
+{
+  "execution_scope": "validated local Python/Pandas functional execution",
+  "not_claimed_as": "ADF/Databricks/Azure SQL/Power BI or Azure scalability execution",
+  "raw_rows": 1920,
+  "clean_rows": 1916,
+  "removed_rows": 4,
+  "removal_breakdown": {
+    "duplicate_record": 1,
+    "unsupported_event_type": 1,
+    "missing_required_identifier": 1,
+    "nonpositive_price": 1
+  },
+  "unique_users": 156,
+  "unique_sessions": 350,
+  "view_sessions": 350,
+  "cart_sessions": 283,
+  "purchase_sessions": 216,
+  "purchase_revenue": 134520.76,
+  "engagement_q33_threshold": 15.0,
+  "engagement_q67_threshold": 29.0,
+  "visualization_png_count": 15,
+  "azure_scalability_benchmark_status": "framework prepared; no verified end-to-end Azure 100K/500K/1M timing evidence in package"
+}

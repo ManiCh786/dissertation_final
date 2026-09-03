@@ -1,0 +1,6 @@
+                          scope                  file  clean_rows  processing_seconds  throughput_rows_per_sec
+LOCAL_PANDAS_BASELINE_NOT_AZURE  ecommerce_100000.csv       99792              0.9116                109464.51
+LOCAL_PANDAS_BASELINE_NOT_AZURE  ecommerce_500000.csv      498960              7.8925                 63219.18
+LOCAL_PANDAS_BASELINE_NOT_AZURE ecommerce_1000000.csv      997920             10.4360                 95623.19
+Saved: /mnt/data/azure_practical_work/Azure_ECommerce_Practical_Final_Evidence_Aligned/outputs/performance/local_scalability_baseline_NOT_AZURE.csv
+IMPORTANT: these are local Pandas timings and are not Azure scalability evidence.

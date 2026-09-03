@@ -1,0 +1,23 @@
+LOCAL PANDAS ETL - VALIDATED EXECUTION
+                                  metric  value
+                                raw_rows   1920
+                  duplicate_rows_removed      1
+     unsupported_event_type_rows_removed      1
+         invalid_event_time_rows_removed      0
+missing_required_identifier_rows_removed      1
+              invalid_price_rows_removed      0
+          nonpositive_price_rows_removed      1
+                              clean_rows   1916
+                            removed_rows      4
+
+Rejected-row reasons:
+ source_row_number event_type  price                         user_session            rejection_reason
+              1918       view 201.29 ae270da7-02f0-6b90-f143-262fdc5c0eed            duplicate_record
+              1919      click  10.00 537de36e-09b8-4586-a9c8-f8abcc5b2c56      unsupported_event_type
+              1920       view  -3.00 28ef7952-4559-43cc-8f43-afbf919ef1a3           nonpositive_price
+              1921       view  15.00                                  NaN missing_required_identifier
+
+Silver clean data: /mnt/data/azure_practical_work/Azure_ECommerce_Practical_VSCode/data/silver/ecommerce_events_clean.csv
+Data-quality report: /mnt/data/azure_practical_work/Azure_ECommerce_Practical_VSCode/data/silver/data_quality_report.csv
+Rejected-row audit: /mnt/data/azure_practical_work/Azure_ECommerce_Practical_VSCode/data/silver/data_quality_rejected_records.csv
+Scope note: these are local Pandas results, not ADF/Databricks execution evidence.

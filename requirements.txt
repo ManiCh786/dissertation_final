@@ -1,0 +1,8 @@
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+python-dotenv>=1.0
+azure-identity>=1.19
+azure-storage-file-datalake>=12.17
+azure-mgmt-datafactory>=9.0
+mssql-python>=1.0.0

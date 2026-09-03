@@ -1,0 +1,9 @@
+LOCAL PANDAS GOLD ANALYTICS - VALIDATED EXECUTION
+ - /mnt/data/azure_practical_work/Azure_ECommerce_Practical_VSCode/data/gold/gold_cart_abandonment.csv
+ - /mnt/data/azure_practical_work/Azure_ECommerce_Practical_VSCode/data/gold/gold_category_performance.csv
+ - /mnt/data/azure_practical_work/Azure_ECommerce_Practical_VSCode/data/gold/gold_conversion_funnel.csv
+ - /mnt/data/azure_practical_work/Azure_ECommerce_Practical_VSCode/data/gold/gold_customer_engagement.csv
+ - /mnt/data/azure_practical_work/Azure_ECommerce_Practical_VSCode/data/gold/gold_kpi_summary.csv
+ - /mnt/data/azure_practical_work/Azure_ECommerce_Practical_VSCode/data/gold/gold_metric_definitions.csv
+Engagement thresholds: Low <= 15; Medium <= 29; High > 29
+Scope note: these outputs were produced locally with Pandas, not by Azure Databricks/ADF.

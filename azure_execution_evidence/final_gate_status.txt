@@ -1,0 +1,2 @@
+SUBMISSION VALIDATION FAILED
+ - FINAL GATE: missing genuine Azure scalability results. Run src/12_run_azure_benchmark.py after Azure authentication.

@@ -1,0 +1,29 @@
+START HERE - SUPERVISOR-FEEDBACK-RESOLVED PRACTICAL
+
+1) SMALL DATASET = SANITY TEST ONLY
+   python src/04_local_etl_pandas.py --input data/demo/demo_ecommerce_events.csv
+   python src/05_create_gold_metrics.py --input data/silver/ecommerce_events_clean.csv
+   python src/visualizations.py
+   Expected: 1,920 raw -> 1,916 clean; 4 rejected; 15 figures.
+
+2) REQUIRED SCALABILITY WORKLOADS
+   Already included: data/samples/ecommerce_100000.csv, ecommerce_500000.csv, ecommerce_1000000.csv
+   Recreate if needed: python src/01_create_benchmark_workloads.py
+
+3) LOCAL PRE-CLOUD CHECK (NOT AZURE)
+   python src/10_scalability_test_local.py
+
+4) REAL AZURE EXECUTION - REQUIRED TO KEEP CURRENT OBJECTIVE/RQ 5
+   Read docs/AZURE_EXECUTION_CHECKLIST.md
+   python src/00_validate_azure_login.py
+   python src/12_run_azure_benchmark.py
+
+5) GENERATE CHAPTER 4 RESULTS FROM GENUINE AZURE EVIDENCE
+   python src/15_generate_azure_results_artifacts.py
+
+6) FINAL GATE
+   python src/11_validate_submission.py --require-azure
+   Do not submit the dissertation as an Azure scalability evaluation until this passes.
+
+7) FIGURES
+   Use docs/FIGURE_EVIDENCE_PLAN.md and capture actual ADLS, ADF Monitor, Databricks, Azure SQL and Power BI evidence after cloud execution.

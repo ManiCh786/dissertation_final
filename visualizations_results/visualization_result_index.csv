@@ -1,0 +1,16 @@
+file,result
+01_data_cleaning_summary.png,Functional ETL correctness: original vs clean rows
+02_data_quality_rejection_reasons.png,Exact reasons for the four rejected demo records
+03_conversion_funnel_sessions.png,Ordered session funnel View -> Cart -> Purchase
+04_funnel_stage_conversion_rates.png,View-to-cart and cart-to-purchase session rates
+05_purchase_revenue_by_category.png,Purchase-event revenue by category
+06_category_conversion_rates.png,Category view-to-cart and purchase conversion rates
+07_cart_abandonment_rate_by_category.png,Session-category abandonment rate
+08_cart_vs_abandoned_sessions.png,Cart sessions compared with abandoned sessions
+09_customer_engagement_distribution.png,Low/Medium/High engagement distribution
+10_top_15_engagement_scores.png,Highest engagement scores using the implemented formula
+11_avg_purchase_value_by_engagement.png,Average purchase value by engagement level
+12_event_type_distribution.png,Counts of validated behavioural event types
+13_hourly_event_activity.png,Event activity by hour
+14_daily_purchase_revenue_trend.png,Daily revenue from purchase events
+15_category_event_mix.png,Views/carts/purchases/remove-from-cart mix by category
